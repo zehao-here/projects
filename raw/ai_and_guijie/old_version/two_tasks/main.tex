@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+
+\usepackage{geometry}
+\usepackage{amsmath, amsthm, amssymb, bbm}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calc}
+
+% Define colors for emphasis
+\definecolor{mAlert}{RGB}{235, 129, 27}
+\newcommand{\alert}[1]{\textcolor{mAlert}{#1}}
+
+\newtheorem{assumption}{Assumption}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\title{AI, Headquarters and Guijie: A Principal-Agent Analysis}
+\author{Zehao Zhang}
+% \date{\today}
+
+\setstretch{1.1}
+
+\begin{document}
+
+\maketitle
+
+\section{Model}
+\label{sec:model}
+
+Consider a principal $P$ (headquarters) and an agent $A$ (local manager, ``guijie''). HQ deploys an AI system that both detects manipulation and provides guidance; the dashboard can be strategically gamed, and AI has dual-use effects.
+
+\paragraph{Technology and KPIs with AI}
+
+The campaign outcome is $y \in \{0,1\}$ (success or failure). The agent allocates effort across two activities
+\[
+e = (e_c, e_g) \in \mathbb{R}_+^2,
+\]
+where $e_c$ raises true commercial impact (``core'') and $e_g$ is gaming/manipulation that inflates the dashboard without creating real value.
+
+AI has two design knobs chosen by HQ: guidance $g \ge 0$ and detection intensity $\ell \ge 0$. Guidance directly raises the productivity of core and (leakily) of gaming; detection directly raises the sensitivity of manipulation detection. Formally:
+\begin{itemize}
+  \item Success arrives with probability $f(e_c; g)$ with $\partial f/\partial e_c>0$, $\partial^2 f/\partial e_c^2<0$, and $\partial^2 f/(\partial e_c \, \partial g) > 0$ (AI-complementarity).
+  \item The measured KPI is $m(e_c,e_g; g) = \delta(g)\, e_c + \psi(g)\, e_g$, where $\delta'(g) > 0$ and $\psi'(g) = \sigma\, \delta'(g)$ with leakage parameter $\sigma \in [0,1]$ (dual-use guidance).
+  \item Manipulation is detected with probability $d(e_g,\ell,g)$, increasing in $e_g$ and $\ell$, convex in $e_g$, and with detection synergy $\partial^2 d/(\partial e_g \, \partial g) > 0$.
+\end{itemize}
+
+The agent bears a separable convex cost $G(e) = G_c(e_c)+G_g(e_g)$ with $G_i' > 0$, $G_i'' > 0$.
+
+\paragraph{Dashboard design and timing}
+
+HQ commits to a linear dashboard and AI design before effort choices. Let $b\ge 0$ be the incentive slope (bonus sensitivity), $\lambda \in [0,1]$ the weight on true success versus the measured KPI, $g \ge 0$ the guidance intensity, and $\ell \ge 0$ the detection intensity, with convex costs $K(g)$ and $C(\ell)$.
+
+Payment rule: the realized wage is
+\[
+w = w_0 + b\big( \lambda\, y + (1-\lambda)\, m(e) \big) - \mathbbm{1}\{\text{detected}\}\, P,
+\]
+where $P>0$ is a clawback/penalty applied if gaming is detected. In expectations,
+\[
+\mathbb{E}[w] = w_0 + b\Big( \lambda\, f(e_c; g) + (1-\lambda)\, (\delta(g) e_c + \psi(g) e_g) \Big) - P\, d(e_g,\ell,g).
+\]
+
+Timing: (i) HQ chooses $(b,\lambda,\ell,g)$; (ii) the agent chooses $e$; (iii) $y$ is realized, $m$ is measured, detection occurs with probability $d(e_g,\ell,g)$, and payments are made.
+
+\paragraph{Payoffs}
+
+HQ's expected payoff is
+\[
+v_P = r\, f(e_c; g) - \mathbb{E}[w] - C(\ell) - K(g),
+\]
+where $r>0$ is the revenue from a success. The agent's expected payoff is
+\[
+v_A = \mathbb{E}[w] - G(e).
+\]
+
+\paragraph{Strategic interaction}
+
+For an interior agent optimum $e^*(b,\lambda,\ell,g)$, first-order conditions satisfy
+\begin{align*}
+G_c'(e_c) &= b\big( \lambda\, \partial f/\partial e_c (e_c; g) + (1-\lambda)\, \delta(g) \big), \\
+G_g'(e_g) &= b(1-\lambda)\, \psi(g) - P\, \partial_{e_g} d(e_g,\ell,g).
+\end{align*}
+These equations highlight: (i) a direct AI effect via $\ell$ that raises detection and lowers $e_g$; (ii) an indirect AI effect via $g$ that raises core productivity and dashboard sensitivity to core (through $\delta(g)$) but—with leakage $\sigma$—also raises returns to gaming, while detection synergy in $g$ steepens $\partial_{e_g} d$.
+
+\section{Equilibrium and Comparative Statics with Dual-Use AI}
+\label{sec:eq}
+
+Given $(b,\lambda,\ell,g)$, the agent chooses $e^*(b,\lambda,\ell,g)$ that solves the conditions above. Anticipating this, HQ chooses $(b,\lambda,\ell,g)$ to maximize $v_P$ subject to incentive compatibility.
+
+\begin{proposition}[Dual-use AI: direct vs indirect effects]
+Suppose $f$ is increasing and concave with positive AI complementarity, $d$ is increasing in $e_g$ and $\ell$ and convex in $e_g$ with detection synergy in $g$, $K$ and $C$ are convex, and $G$ is separable and convex. Then any interior equilibrium exhibits:
+\begin{enumerate}
+    \item (Direct effect) $e_g$ is decreasing in $\ell$ and $P$, with a corner $e_g^*=0$ whenever $P\, \partial_{e_g} d \ge b(1-\lambda)\, \psi(g)$.
+    \item (Indirect guidance) $e_c$ is increasing in $g$ (AI complements core). With leakage $\sigma>0$, $e_g$ is locally increasing in $g$ via $\psi'(g)$ but decreasing in $g$ via detection synergy if $\partial^2 d/(\partial e_g \, \partial g)$ is large; thus $e_g$ can be non-monotone in $g$.
+    \item (Design) If leakage is moderate (small $\sigma$) or detection synergy is strong, the optimal $g^*$ crowds back from gaming: $\partial e_g^*/\partial g < 0$ at $g^*$ while $\partial e_c^*/\partial g > 0$.
+    \item Optimal detection $\ell^*$ is (weakly) increasing in the gaming productivity slope $\psi'(g)$ and decreasing in synergy strength.
+\end{enumerate}
+\emph{Sketch.} Follows from the agent FOCs and the envelope theorem: $g$ shifts both marginal benefits and the detection slope; signs depend on leakage $\sigma$ and synergy $\partial^2 d/(\partial e_g \, \partial g)$.
+\end{proposition}
+
+\noindent Example (linear-quadratic). Let $G_c(e_c)=\tfrac{1}{2} c_c e_c^2$, $G_g(e_g)=\tfrac{1}{2} c_g e_g^2$, $f(e_c; g)=(1+\eta g) e_c$, $\delta(g)=\delta_0+\alpha g$, $\psi(g)=\psi_0+\sigma \alpha g$, and $d(e_g,\ell,g)=\ell (1+\kappa g) e_g$. Then
+\[
+e_c^* = \frac{b\big( \lambda (1+\eta g) + (1-\lambda)\, \delta(g) \big)}{c_c},\quad e_g^* = \max\left\{0,\, \frac{b(1-\lambda)\, \psi(g) - P\, \ell (1+\kappa g)}{c_g} \right\}.
+\]
+Hence $\partial e_g^*/\partial g < 0$ when $P\, \ell \, \kappa > b(1-\lambda)\, \sigma \alpha$ (guidance-induced detection dominates dual-use leakage), generating a U-shaped gaming response in $g$.
+\end{document}

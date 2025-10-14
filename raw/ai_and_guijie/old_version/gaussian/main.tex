@@ -1,0 +1,82 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath, amsthm, amssymb, bbm}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calc}
+
+% Define Metropolis theme alert color
+\definecolor{mAlert}{RGB}{235, 129, 27}
+\newcommand{\alert}[1]{\textcolor{mAlert}{#1}}
+
+\newtheorem{assumption}{Assumption}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\title{AI, Headquarters and Guijie}
+% \author{Zehao Zhang}
+% \date{\today}
+
+\setstretch{1.5}
+
+\begin{document}
+
+\maketitle
+
+\section{Model}
+
+There is a principal $P$ (say, a headquarter) and an agent $A$ (a local manager, ``guijie'').
+
+The principal randomly chooses one experiment which needs the agent to conduct. The quality of the experiment is $q \sim N(0, \sigma_P^2)$. 
+
+The agent's type is $\theta \sim N(0, \sigma_A^2)$, which is independent of $q$.
+
+Let $z$ be the outcome of the experiment with data generation process $ z = q + \theta$.
+
+The principal observes a realization of the experiment $\tilde{z}$; she cannot observe the actual quality of the experiment $q$ or the agent's type $\theta$.
+
+
+\section{Analysis}
+\subsection{Estimation of the Uninformed Principal}
+
+After observing $\tilde{z}$, the principal estimates the experiment quality $q$ and the agent's type $\theta$. Formally, the posterior distributions of $q$ and $\theta$, conditional on $z = \tilde{z}$, are
+\begin{align*}
+    q \mid z = \tilde{z} \sim N\!\left(\frac{\sigma_P^2}{\sigma_P^2 + \sigma_A^2}\tilde{z}, \frac{\sigma_P^2\sigma_A^2}{\sigma_A^2 + \sigma_P^2}\right),
+\end{align*}
+and
+\begin{align*}
+    \theta \mid z = \tilde{z} \sim N\!\left(\frac{\sigma_A^2}{\sigma_P^2 + \sigma_A^2}\tilde{z}, \frac{\sigma_P^2\sigma_A^2}{\sigma_A^2 + \sigma_P^2}\right).
+\end{align*}
+
+As a result, the best point estimates are
+$\hat{q} = \frac{\sigma_P^2}{\sigma_P^2 + \sigma_A^2}\tilde{z}$ and
+$\hat{\theta} = \frac{\sigma_A^2}{\sigma_P^2 + \sigma_A^2}\tilde{z}$.
+
+Suppose that $\tilde{z} < 0$, which we interpret as a bad outcome. If $\sigma_A^2 \gg \sigma_P^2$, then $\hat{q} \approx 0$ and $\hat{\theta} \approx \tilde{z}$. Thus, the uninformed principal would attribute almost all the bad outcome to the agent's type.
+
+Consider another extreme case where $\tilde{z} < 0$ and AI enables the principal to perfectly observe the agent's type. Then the uninformed principal will understand that the bad outcome is due to the experiment quality.
+
+% \subsection{Discussion}
+
+% 1. If $\tilde{z} > 0$ and $\sigma_A^2 \gg \sigma_P^2$, then without AI, the uninformed principal will attribute the good result to having had a good agent, which is a bit weird to me. It would be fantastic to know whether you share the same view, or find it natural enough.
+
+% \noindent 2. Instead of focusing on an agent's type, I can model the agent's action which will then involve strategic behavior of the agent, but I am not sure whether it's a good thing to do at present. Could you please advise what your choice would be if you were developing this model?
+
+% \noindent 3. What is your general opinion on the current model?
+
+
+
+% \bibliographystyle{apalike}
+% \bibliography{ref}
+
+% \clearpage
+
+% \appendix
+
+
+\end{document}

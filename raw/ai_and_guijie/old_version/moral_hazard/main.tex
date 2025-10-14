@@ -1,0 +1,170 @@
+\documentclass[11pt]{article}
+
+\usepackage{geometry}
+\usepackage{amsmath, amsthm, amssymb, bbm}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calc}
+
+% Define colors for emphasis
+\definecolor{mAlert}{RGB}{235, 129, 27}
+\newcommand{\alert}[1]{\textcolor{mAlert}{#1}}
+
+\newtheorem{assumption}{Assumption}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\title{AI, Headquarters and Guijie: A Principal-Agent Analysis}
+\author{Zehao Zhang}
+% \date{\today}
+
+\setstretch{1.1}
+
+\begin{document}
+
+\maketitle
+
+\section{Model}
+\label{sec:model}
+
+Consider a principal $P$ (headquarters) and an agent $A$ (local manager, ``guijie''). The principal requires the agent to conduct a commercial campaign.
+
+\paragraph{Campaign Success and Production Technology}
+
+The campaign outcome is $y = 1$ (success) or $y = 0$ (failure). Success depends on two things:
+\[
+y = q \cdot \theta
+\]
+where $q$ is the campaign quality and $\theta$ is the local condition.
+
+The campaign quality $q$ is exogenous with $\Pr\{q = 1\} = p$ and $\Pr\{q = 0\} = 1 - p$. The local condition $\theta$ is influenced by the agent's effort $a \in [0, 1]$ with $\Pr\{\theta = 1\} = a$ and $\Pr\{\theta = 0\} = 1 - a$. The local condition is exogenous.
+
+Thus, the probability of campaign success is:
+\[
+\Pr(y = 1) = \Pr(q = 1 \wedge \theta = 1) = p \cdot a
+\]
+
+\paragraph{Agent's Cost of Effort}
+
+The agent chooses effort level $a$ at a cost $g(a)$, where the cost function satisfies standard properties: $g(0) = 0$, $g(1) = +\infty$, $g'(a) > 0$ and $g''(a) > 0$.
+
+\paragraph{Contract and Payoffs}
+
+The principal offers a contract specifying wage $w$ for the campaign. The payoff of the principal is $v_P = r y - w$, where $r>0$. The payoff of the agent is $v_A = w - g(a)$.
+
+\section{Analysis}
+\label{sec:analysis}
+
+\subsection{First-Best Solution: Observable Efforts}
+
+In the first-best scenario, the principal can perfectly observe and contract directly on the agent's effort level $a$.
+
+The principal maximizes expected payoff subject to the agent's participation constraint:
+
+\begin{align*}
+\max_{a,w} \quad & E[v_P] = r \cdot \Pr(y=1) - w = r p a - w \\
+\text{s.t.} \quad & E[v_A] = w - g(a) \geq 0
+\end{align*}
+
+Since the principal can directly specify $a$, she sets $w = g(a)$ to minimize compensation costs. The optimization simplifies to:
+
+\[
+\max_a \, r p a - g(a)
+\]
+Then we have the first order condition as
+\[
+r p = g'(a)
+\]
+
+The optimal effort level $a^{FB}$ then satisfies:
+\[
+g'(a^{FB}) = r p
+\]
+And the principal's expected payoff is:
+\[
+v_P^{FB} = r p a^{FB} - g(a^{FB})
+\]
+
+\subsection{Second-Best Solution: Unobservable Efforts}
+
+In the second-best scenario, the principal cannot observe the agent's effort $a$, but can observe the campaign outcome $y$. The principal must design an outcome-contingent contract $w(y)$ to provide incentives.
+
+\subsubsection{Agent's and Principal's Problem}
+The agent chooses effort $a$ to maximize expected utility:
+
+\[
+\max_a \, E[w - g(a)] = \Pr(y=1|a) \cdot w(1) + \Pr(y=0|a) \cdot w(0) - g(a)
+\]
+
+Substituting the probabilities:
+
+\[
+\max_a \, p a \cdot w_1 + (1 - p a) \cdot w_0 - g(a),
+\]
+where $w_1 \equiv w(y=1)$ and $w_0 \equiv w(y=0)$.
+
+Agent's first-order condition is given by
+\[
+p w_1 - p w_0 = g'(a)
+\]
+Then the Incentive compatibility constraint is
+\[
+g'(a) = p (w_1 - w_0)
+\]
+
+The principal chooses $w_0, w_1, a$ to maximize expected payoff:
+
+\[
+\max_{w_0, w_1, a} \, r p a - E[w] = r p a - [p a w_1 + (1 - p a) w_0]
+\]
+
+Subject to:
+\begin{enumerate}
+\item Incentive compatibility: $g'(a) = p (w_1 - w_0)$
+\item Participation constraint: $E[w] - g(a) \geq 0$
+\end{enumerate}
+
+\subsubsection{Optimal Contract}
+
+Without loss of optimality, set $w_0 = 0$ (standard result in moral hazard models). Then:
+
+\[
+w_1 = \frac{g'(a)}{p}
+\]
+
+The expected wage becomes:
+\[
+E[w] = p a w_1 = p a \cdot \frac{g'(a)}{p} = a g'(a)
+\]
+
+The Participation constraint, $a g'(a) - g(a) \geq 0$, is always satisfied by observing $a g'(a) - g(a) \mid_{a=0} = 0$ and this increases with $a$.
+
+Principal's objective simplifies to:
+\[
+\max_a \, r p a - a g'(a)
+\]
+We have FOC as
+\[
+r p = g'(a) + a g''(a)
+\]
+The optimal effort $a^{SB}$ then satisfies:
+\[
+g'(a^{SB}) + a^{SB} g''(a^{SB}) = r p
+\]
+
+% \textbf{Second-best payoff:} The principal's expected payoff is:
+% \[
+% v_P^{SB} = r p a^{SB} - a^{SB} g'(a^{SB})
+% \]
+
+Since $g''(a) > 0$ and $g'(a^{FB}) = r p$, we have:
+\[
+a^{SB} < a^{FB}\]
+
+Therefore, the second-best effort is lower than the first-best effort due to the moral hazard problem.
+
+\end{document}
