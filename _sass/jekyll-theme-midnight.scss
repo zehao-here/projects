@@ -57,6 +57,11 @@ blockquote {
   margin: 0 0 0rem;
 }
 
+p {
+  text-align: justify;
+  letter-spacing: 0.02em; // slight increase in spacing between characters
+}
+
 h1,
 h2,
 h3,
