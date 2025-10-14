@@ -8,9 +8,7 @@ layout: default
 }
 </style>
 
-# Welcome to my projects
-
-## Cuties
+# Cuties
 
 ```
 You can find some cute write-ups here.
