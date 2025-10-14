@@ -14,8 +14,10 @@ layout: default
 You can find some cute write-ups here.
 ```
 <div class="project-list">
-  <a href="./cuties\ai_guijie.pdf">AI, Headquarters and Guijie</a>
-  <a href="./cuties\evaluation.pdf">Sine of the Students (Evaluation Design of Two Courses)</a>
+  <!-- <a href="./cuties\ai_guijie.pdf">AI, Headquarters and Guijie</a>
+  <a href="./cuties\evaluation.pdf">Sine of the Students (Evaluation Design of Two Courses)</a> -->
+  <a href="./cuties\ai_guijie.md">AI, Headquarters and Guijie</a>
+  <a href="./cuties\evaluation.md">Sine of the Students (Evaluation Design of Two Courses)</a>
 </div>
 
 
