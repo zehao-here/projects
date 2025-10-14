@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Sine of the Students (Evaluation Design of Two Courses)"
+categories: [cuties]
+---
+
 # Sine of the Students
 
 *Zehao Zhang*

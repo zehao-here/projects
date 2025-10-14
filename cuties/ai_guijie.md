@@ -1,3 +1,9 @@
+---
+layout: post
+title: "AI, Headquarters and Guijie"
+categories: [cuties]
+---
+
 # AI, Headquarters and Guijie
 
 ## Model
