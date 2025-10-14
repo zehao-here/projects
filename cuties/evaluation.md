@@ -1,6 +1,7 @@
 ---
 layout: post-cutie
 title: Sine of the Students (Evaluation Design of Two Courses)
+permalink: /cuties/evaluation/
 ---
 
 # Sine of the Students

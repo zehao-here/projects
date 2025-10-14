@@ -1,6 +1,7 @@
 ---
 layout: post-cutie
 title: AI, Headquarters and Guijie
+permalink: /cuties/ai_guijie/
 ---
 
 # AI, Headquarters and Guijie
