@@ -1,7 +1,6 @@
 ---
-layout: post
-title: "Sine of the Students (Evaluation Design of Two Courses)"
-categories: [cuties]
+layout: post-cutie
+title: Sine of the Students (Evaluation Design of Two Courses)
 ---
 
 # Sine of the Students
@@ -40,10 +39,10 @@ Students $x$ and $y$ prefer outcomes $(1, 0)$ and $(0, 1)$, respectively, but su
 
 Suppose AI greatly improves productivity in course 1, making efforts on the $x$-axis more efficient. Blue denotes efforts and outcomes prior to AI. If the director only raises the minimum requirement $c_1$ on the $x$-axis, AI benefits student $x$ but harms student $y$. Student $y$ has no choice but to allocate less effort to course 2, which he prefers. The director can instead raise $c_2$ to balance the outcomes.
 
-<p align="center">
-  <img src="figs/evaluation/fig1.jpg" alt="Pre-AI" width="42%" style="display:inline-block; margin-right:2%;">
-  <img src="figs/evaluation/fig2.jpg" alt="Post-AI" width="42%" style="display:inline-block;">
-</p>
+<div class="image-row">
+  <img src="{{ '/cuties/figs/evaluation/fig1.jpg' | relative_url }}" alt="Pre-AI" />
+  <img src="{{ '/cuties/figs/evaluation/fig2.jpg' | relative_url }}" alt="Post-AI" />
+</div>
 
 *Figure: Policies and outcomes in the pre- and post-AI scenarios.*
 
