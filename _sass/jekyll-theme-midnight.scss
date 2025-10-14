@@ -270,6 +270,10 @@ section {
   gap: 0.8rem;
   margin: 0;
 
+  &.indented {
+    margin-left: 2rem;
+  }
+
   a {
     display: inline-flex;
     align-items: center;

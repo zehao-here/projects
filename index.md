@@ -1,19 +1,12 @@
 ---
 layout: default
 ---
-
-<style>
-.project-list {
-    margin-left: 2rem;
-}
-</style>
-
 # Cuties
 
 ```
 You can find some cute write-ups here.
 ```
-<div class="project-list">
+<div class="project-list indented">
   <!-- <a href="./cuties\ai_guijie.pdf">AI, Headquarters and Guijie</a>
   <a href="./cuties\evaluation.pdf">Sine of the Students (Evaluation Design of Two Courses)</a> -->
   <a href="{{ '/cuties/ai_guijie/' | relative_url }}">AI, Headquarters and Guijie</a>
