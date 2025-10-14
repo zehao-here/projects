@@ -12,7 +12,7 @@ permalink: /cuties/evaluation/
 
 ### Students
 
-There are two students, $x$ and $y$, who both attend two courses denoted by $j \in \{1,2\}$. Each student chooses an intensity $r_i \in [0,1]$ and an angle $\varphi_i \in [0, \tfrac{\pi}{2}]$. Due to an energy constraint, efforts are parameterized by the unit quarter-circle:
+There are two students, $x$ and $y$, who both attend two courses denoted by $j \in \lbrace1,2\rbrace$. Each student chooses an intensity $r_i \in [0,1]$ and an angle $\varphi_i \in [0, \tfrac{\pi}{2}]$. Due to an energy constraint, efforts are parameterized by the unit quarter-circle:
 
 \[
 (e_{i1}, e_{i2}) = r_i (\cos \varphi_i, \sin \varphi_i), \qquad e_{i1}^2 + e_{i2}^2 \le 1.
@@ -24,7 +24,7 @@ Without loss of generality, assume the budget binds in the relevant cases ($r_i 
 
 ### Lecturers
 
-There are two lecturers, one for each course $j \in \{1,2\}$. The outcome gap across students is $\Delta_j \equiv \max_{i \in \{x,y\}} y_{ij} - \min_{i \in \{x,y\}} y_{ij}$. A lecturer becomes very upset if she observes a large gap $k \in (0,1)$ between the highest and lowest outcomes. Formally, the lecturer's utility is $0$ if $\Delta_j < k$ and $-\infty$ otherwise.
+There are two lecturers, one for each course $j \in \lbrace1,2\rbrace$. The outcome gap across students is $\Delta_j \equiv \max_{i \in \lbrace x,y \rbrace} y_{ij} - \min_{i \in \lbrace x,y \rbrace} y_{ij}$. A lecturer becomes very upset if she observes a large gap $k \in (0,1)$ between the highest and lowest outcomes. Formally, the lecturer's utility is $0$ if $\Delta_j < k$ and $-\infty$ otherwise.
 
 ### Director
 

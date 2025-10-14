@@ -8,11 +8,11 @@ permalink: /cuties/ai_guijie/
 
 ## Model
 
-Two players: a headquarter (P) and a guijie (A). P initiates a campaign to boost sales. A successful campaign first depends on the market condition $\theta \in \{0, 1\}$, which P does not know well. With probability $q \in (0, 1)$, the campaign may be initiated at a time when the market is actually bad ($\theta = 0$). With probability $1-q$, the campaign is initiated at a correct time, i.e., $\theta = 1$. Guijie observes a noisy signal $s$ with $\Pr(s=1\mid \theta=1)=1$ and $\Pr(s=1\mid \theta=0)=p\in(0,1)$.
+Two players: a headquarter (P) and a guijie (A). P initiates a campaign to boost sales. A successful campaign first depends on the market condition $\theta \in \lbrace0, 1\rbrace$, which P does not know well. With probability $q \in (0, 1)$, the campaign may be initiated at a time when the market is actually bad ($\theta = 0$). With probability $1-q$, the campaign is initiated at a correct time, i.e., $\theta = 1$. Guijie observes a noisy signal $s$ with $\Pr(s=1\mid \theta=1)=1$ and $\Pr(s=1\mid \theta=0)=p\in(0,1)$.
 
-The second component of success is the guijie's effort $e \in \{0, 1\}$. Guijie bears a cost of $c$ if $e = 1$, no cost if $e = 0$.
+The second component of success is the guijie's effort $e \in \lbrace 0, 1 \rbrace$. Guijie bears a cost of $c$ if $e = 1$, no cost if $e = 0$.
 
-The final outcome of the campaign is $y \in \{0, 1\}$, and $y = \theta e$. P receives a payoff of $\Pi_P$ if $y = 1$, and zero otherwise. Guijie does not profit directly from the campaign. To incentivize guijie to work, P offers a bonus $b$ to A if $y = 1$. Both P and A are risk neutral.
+The final outcome of the campaign is $y \in \lbrace0, 1\rbrace$, and $y = \theta e$. P receives a payoff of $\Pi_P$ if $y = 1$, and zero otherwise. Guijie does not profit directly from the campaign. To incentivize guijie to work, P offers a bonus $b$ to A if $y = 1$. Both P and A are risk neutral.
 
 Timing:
   1. P initiates the campaign and signs the bonus contract $b$ with A.
