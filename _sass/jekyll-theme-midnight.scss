@@ -547,34 +547,12 @@ footer,
 
 @media (prefers-color-scheme: light) {
   :root {
-    --color-background: #f5f7fb;
-    --color-surface: #ffffff;
-    --color-primary: #3d5afe;
-    --color-accent: #27497a;
-    --color-text: #121820;
-    --color-text-light: #515a6c;
-    --shadow-soft: 0 10px 30px rgba(61, 90, 254, 0.12);
-  }
-
-  body {
-    background-color: var(--color-background);
-    color: var(--color-text);
-  }
-
-  section {
-    background-color: var(--color-surface);
-  }
-
-  blockquote {
-    background: rgba(61, 90, 254, 0.08);
-  }
-
-  img {
-    box-shadow: 0 12px 28px rgba(61, 90, 254, 0.15);
-  }
-
-  #header {
-    background-color: var(--color-surface);
-    color: var(--color-text);
+    --color-background: #181e25;
+    --color-surface: #232b35;
+    --color-primary: #99c1ff;
+    --color-accent: #78a5ef;
+    --color-text: #f3f4f6;
+    --color-text-light: #c2cbe0;
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.4);
   }
 }
