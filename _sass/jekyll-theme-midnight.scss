@@ -121,7 +121,7 @@ hr {
 
 img {
   max-width: 100%;
-  border-radius: 12px;
+  border-radius: 4px;
   box-shadow: var(--shadow-soft);
 }
 
@@ -310,9 +310,8 @@ section {
   margin: 1.5rem 0;
 
   img {
-    width: min(42%, 320px);
+    width: min(50%, 420px);
     height: auto;
-    border-radius: 18px;
     box-shadow: var(--shadow-soft);
     object-fit: cover;
   }

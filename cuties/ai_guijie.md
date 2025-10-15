@@ -6,6 +6,8 @@ permalink: /cuties/ai_guijie/
 
 # AI, Headquarters and Guijie
 
+*Zehao Zhang*
+
 ## Model
 
 Two players: a headquarter (P) and a guijie (A). P initiates a campaign to boost sales. A successful campaign first depends on the market condition $\theta \in \lbrace0, 1\rbrace$, which P does not know well. With probability $q \in (0, 1)$, the campaign may be initiated at a time when the market is actually bad ($\theta = 0$). With probability $1-q$, the campaign is initiated at a correct time, i.e., $\theta = 1$. Guijie observes a noisy signal $s$ with $\Pr(s=1\mid \theta=1)=1$ and $\Pr(s=1\mid \theta=0)=p\in(0,1)$.
