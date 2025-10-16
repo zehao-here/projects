@@ -35,3 +35,5 @@ If the communication cost plays a vital role here, i.e., $\lambda \geq \frac{1}{
 ## Remarks
 
 The trick I've put in this version of the Yogi and Commissar story is to use the complexity level as a bridge. Yogi and Commissar dislike each other but not just because they are so different. Team production creates communicational costs, which increase with the complexity level of the good to be produced. It might be an economically rational decision for them to work separately.
+
+One could imagine that, the introduction of a new player, the manager who might be able to reduce the communication cost, preserves the team production. An easy way to model this is to let the manager decrease the parameter $\lambda$ to some lower $\lambda'$. But is there a more interesting way to model this?
