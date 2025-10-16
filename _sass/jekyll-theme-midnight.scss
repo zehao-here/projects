@@ -290,9 +290,9 @@ section {
 
   a {
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-start;
-    gap: 0.3rem;
+    gap: 0.5rem;
     padding: 0.85rem 1.3rem;
     border-radius: 16px;
     background: linear-gradient(to right, rgba(120, 165, 239, 0.12), rgba(120, 165, 239, 0.05));
@@ -307,6 +307,18 @@ section {
       transform: translateY(-2px);
       box-shadow: 0 16px 30px rgba(120, 165, 239, 0.28);
       border-color: rgba(120, 165, 239, 0.4);
+    }
+
+    .project-title {
+      flex: 1 1 auto;
+      font-weight: 600;
+    }
+
+    .project-date {
+      flex: 0 0 auto;
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      letter-spacing: 0.05em;
     }
   }
 }

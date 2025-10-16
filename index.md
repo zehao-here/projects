@@ -1,5 +1,14 @@
 ---
 layout: default
+cuties_items:
+  - file: cuties/evaluation.md
+    title: Sine of the Students (Evaluation Design of Two Courses)
+  - file: cuties/ai_guijie.md
+    title: AI, Headquarters and Guijie
+  - file: cuties/think_do.md
+    title: Thinking and Doing
+  - file: cuties/yogi_commissar.md
+    title: Yogi and Commissar
 ---
 # Cuties
 
@@ -7,12 +16,15 @@ layout: default
 You can find some cute write-ups here.
 ```
 <div class="project-list indented">
-  <!-- <a href="./cuties\ai_guijie.pdf">AI, Headquarters and Guijie</a>
-  <a href="./cuties\evaluation.pdf">Sine of the Students (Evaluation Design of Two Courses)</a> -->
-  <a href="{{ '/cuties/ai_guijie/' | relative_url }}">AI, Headquarters and Guijie</a>
-  <a href="{{ '/cuties/evaluation/' | relative_url }}">Sine of the Students (Evaluation Design of Two Courses)</a>
-  <a href="{{ '/cuties/think_do/' | relative_url }}">Thinking and Doing</a>
-  <a href="{{ '/cuties/yogi_commissar/' | relative_url }}">Yogi and Commissar</a>
+  {% for item in page.cuties_items %}
+    {% assign page_ref = site.pages | where: "path", item.file | first %}
+    {% if page_ref %}
+    <a href="{{ page_ref.url | relative_url }}">
+      <span class="project-title">{{ item.title | default: page_ref.title }}</span>
+      {% if page_ref.produced_at %}<span class="project-date">{{ page_ref.produced_at }}</span>{% endif %}
+    </a>
+    {% endif %}
+  {% endfor %}
 </div>
 
 

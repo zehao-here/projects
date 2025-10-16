@@ -5,7 +5,7 @@ permalink: /cuties/yogi_commissar/
 produced_at: 16 Oct 2025
 ---
 
-*The idea comes from Prof. [Jin Li](https://www.jin-li.org/). The modification I've made is that the complexity level of a task now serves as a bridge to reflect why Y and C dislike each other.*
+*The idea comes from Prof. [Jin Li](http://www.jin-li.org/). The modification I've made is that the complexity level of a task now serves as a bridge to reflect why Y and C dislike each other.*
 
 ## Story in One Paragraph
 
