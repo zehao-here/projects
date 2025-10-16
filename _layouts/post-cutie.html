@@ -47,7 +47,10 @@
       <section>
         <div id="title">
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h3>{{ site.cuties_description | default: site.description | default: site.github.project_tagline }}</h3>
+          <!-- <h3>{{ site.cuties_description | default: site.description | default: site.github.project_tagline }}</h3> -->
+          {% if page.produced_at %}
+          <h4 class="produced-at">{{ page.produced_at }}</h4>
+          {% endif %}
         </div>
 
         {{ content }}

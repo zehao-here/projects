@@ -2,11 +2,8 @@
 layout: post-cutie
 title: Sine of the Students (Evaluation Design of Two Courses)
 permalink: /cuties/evaluation/
+produced_at: 7 Oct 2025
 ---
-
-# Sine of the Students
-
-*Zehao Zhang*
 
 ## Model
 

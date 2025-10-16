@@ -12,6 +12,7 @@ You can find some cute write-ups here.
   <a href="{{ '/cuties/ai_guijie/' | relative_url }}">AI, Headquarters and Guijie</a>
   <a href="{{ '/cuties/evaluation/' | relative_url }}">Sine of the Students (Evaluation Design of Two Courses)</a>
   <a href="{{ '/cuties/think_do/' | relative_url }}">Thinking and Doing</a>
+  <a href="{{ '/cuties/yogi_commissar/' | relative_url }}">Yogi and Commissar</a>
 </div>
 
 

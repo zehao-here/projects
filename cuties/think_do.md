@@ -2,6 +2,7 @@
 layout: post-cutie
 title: Thinking and Doing
 permalink: /cuties/think_do/
+produced_at: 15 Oct 2025
 ---
 
 ## Story in One Paragraph
@@ -18,7 +19,7 @@ We consider a simple version where all individuals have the same level of doing 
 
 We assume that individuals can set up a `firm` to work together. Each firm is made up of one `employer` who specializes in thinking and a number of `employees` who specialize in doing. Each individual is free to choose his role in the economy, where he may either be an employer, an employee or a solo worker. However, an employer needs to pay wages to his employees to attract them. Each individual can freely offer any wage to any other individual, who may then choose to accept or reject the offer.
 
-**Payoffs.** The intermediate good values zero and cannot be exchanged in the market. The value of the final good is normalized to be 1. An employer's average payoff is his profits, which is the value of the final goods his firm produces minus the wages he pays to all his employees. An employee's average payoff is his wage. A solo worker's average payoff is the value of the final good he produces. Thinking and doing has no costs. There is also no other costs, e.g., setting up a firm, finding employees, etc.
+**Payoffs.** The intermediate good values zero. The value of the final good is normalized to be 1. An employer's average payoff is his profits, which is the value of the final goods his firm produces minus the wages he pays to all his employees. An employee's average payoff is his wage. A solo worker's average payoff is the value of the final good he produces. Thinking and doing has no costs. There is also no other costs, e.g., setting up a firm, finding employees, etc.
 
 ## Equilibrium
 
@@ -26,11 +27,11 @@ It's very interesting to mention one classic model, Lucas (1978)[^1], with which
 
 Let's first discuss the wages in the equilibrium, which turns out to be uniform. One trick I have used in developing the model is that, thinking and doing are separately conducted. As a result, in a firm with thinking-doing division, an employer is entirely indifferent between hiring $(\frac{1}{10}, 1)$ or $(2, 1)$, as only the level of doing matters for employees, but everyone is homogeneous in doing. Because firms also compete for employees, the equilibrium wage must be the same for all employees.
 
-Now the indifference condition. Because we have let the employers specialize in thinking, those with relatively higher thinking level prefer hiring people, while those with relatively lower thinking level prefer being hired. The logic of comparative advantage. Will there be any solo workers? There could be, but only in a set of measure zero. Intuitively, only individuals with a moderate level of thinking ability would consider working solo. However, even for them, it is always more profitable to hire others and become an employer, since they can delegate execution to workers at a lower cost instead of doing it themselves. So on the positive real line of thinking levels, people on the left hand side are doers and people on the right are thinkers. The equilibrium wage is the outside option value of the indifferent individual.
+Now the indifference condition. Because we have let the employers specialize in thinking, those with relatively higher thinking level prefer hiring people, while those with relatively lower thinking level prefer being hired. The logic of comparative advantage. Will there be any solo workers? There could be, but only in a set of measure zero. Intuitively, only individuals with a moderate level of thinking ability would consider working solo. However, even for them, it is always more profitable to hire others and become an employer, since they can delegate execution to workers at a lower cost instead of doing it themselves. So on the positive real line of thinking levels, people on the left-hand side are doers and people on the right are thinkers. The equilibrium wage is the outside option value of the indifferent individual.
 
 The cutoff between doers and thinkers is pinned down by the market clearing condition. In the equilibrium, every firm has sufficient employees (equal to the employer's thinking level) to produce. The total measure of execution by all doers should be equal to the total measure of thinking by all thinkers. It also can be proved that there always exists such a cutoff as long as the expectation of thinking is finite. The following figure illustrates the equilibrium.
 
-<div style="width: 65%; margin: 0 auto;">
+<div class="image-single">
     <img src="{{ '/cuties/figs/think_do/fig1.png' | relative_url }}" alt="Equilibrium" />
 </div>
 

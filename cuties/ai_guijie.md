@@ -2,11 +2,8 @@
 layout: post-cutie
 title: AI, Headquarters and Guijie
 permalink: /cuties/ai_guijie/
+produced_at: 14 Oct 2025
 ---
-
-# AI, Headquarters and Guijie
-
-*Zehao Zhang*
 
 ## Model
 

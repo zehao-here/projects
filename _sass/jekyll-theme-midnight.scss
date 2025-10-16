@@ -87,8 +87,16 @@ h3 {
   color: var(--color-text-light);
 }
 
+.produced-at {
+  margin: 0rem 0 0;
+  color: var(--color-text-light);
+  letter-spacing: 0.04em;
+  text-align: center;
+  display: block;
+}
+
 h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 h5 {
@@ -300,6 +308,18 @@ section {
       box-shadow: 0 16px 30px rgba(120, 165, 239, 0.28);
       border-color: rgba(120, 165, 239, 0.4);
     }
+  }
+}
+
+.image-single {
+  width: 65%;
+  margin: 0.5rem auto;
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .image-single {
+    width: min(100%, 420px);
   }
 }
 
