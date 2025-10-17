@@ -15,7 +15,7 @@ There are two students, $x$ and $y$, who both attend two courses denoted by $j \
 (e_{i1}, e_{i2}) = r_i (\cos \varphi_i, \sin \varphi_i), \qquad e_{i1}^2 + e_{i2}^2 \le 1.
 \]
 
-The outcomes in the courses are normalized to equal effort, so $y_{ij} = e_{ij}$. Student $x$ only cares about reach on the $x$-axis, while student $y$ only cares about reach on the $y$-axis. Both students try their best to avoid triggering the policy penalty defined below.
+The outcomes in the courses are normalized to equal effort, so $y_{ij} = e_{ij}$. Student $x$ only cares about reach on the $x$-axis, while student $y$ only cares about reach on the $y$-axis. Both students try their best to avoid triggering the policy penalty defined below. (A side comment: I guess it's always harder to make up one's mind to get a 100 and a 60. The history of being a good student is a real burden.)
 
 Without loss of generality, assume the budget binds in the relevant cases ($r_i = 1$).
 
