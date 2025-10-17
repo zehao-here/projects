@@ -23,6 +23,8 @@ Without loss of generality, assume the budget binds in the relevant cases ($r_i 
 
 There are two lecturers, one for each course $j \in \lbrace1,2\rbrace$. The outcome gap across students is $\Delta_j \equiv \max_{i \in \lbrace x,y \rbrace} y_{ij} - \min_{i \in \lbrace x,y \rbrace} y_{ij}$. A lecturer becomes very upset if she observes a large gap $k \in (0,1)$ between the highest and lowest outcomes. Formally, the lecturer's utility is $0$ if $\Delta_j < k$ and $-\infty$ otherwise.
 
+(I need a really good real-life justification for assuming that only $k$ matters for the lecturers.)
+
 ### Director
 
 The director cares about lecturers' welfare and employs a minimal policy to minimize distortions to students' efforts. To ensure the outcome gap is not too large, she requires each student to reach at least a minimum outcome in each course. Given $c_j \ge 0$, if any student $i$ attains $y_{ij} < c_j$ in course $j$, then that student's utility is $-\infty$.
