@@ -47,7 +47,7 @@ The augmentative AI is modelled as uniformly increasing everyone's doing level f
 
 The substitutional AI is modelled as a pool of computations available to firms, which is quantitatively equal to a measure of $\mu < (\int_{0}^{\infty} s f(s) ds)$ execution resources. Firms bid for using the computations, and the unit price of computation will be equal to the labor wage in equilibrium. Because human doers can be replaced by AI, we have fewer doers in the economy. In terms of wage, it turns out that, regardless of the shape of $F$, the equilibrium wage will always decrease because only the first aforementioned effect happens. Those employers with high thinking levels will profit from a lower equilibrium wage.
 
-The following figure illustrates the equilibrium with augmentative AI (in the case of $F = 1 - \frac{1}{(1+s)^2}$) and substitutional AI.
+The following figure illustrates the equilibrium with augmentative AI (assuming that $F(s) = 1 - \frac{1}{(1+s)^2}$) and substitutional AI.
 
 <div class="image-row">
     <img src="{{ '/cuties/figs/think_do/fig2.png' | relative_url }}" alt="Augmentative AI" />
