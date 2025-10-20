@@ -29,7 +29,7 @@ Let's first discuss the wages in the equilibrium, which turns out to be uniform 
 
 Now the indifference condition. Because we have let the employers specialize in thinking, those with relatively higher thinking level prefer hiring people, while those with relatively lower thinking level prefer being hired. The logic of comparative advantage. Will there be any solo workers? There could be, but only in a set of measure zero. Intuitively, only individuals with a moderate level of thinking ability would consider working solo. However, even for them, it is always more profitable to hire others and become an employer, since they can delegate execution to workers at a lower cost instead of doing it themselves (and then enjoy their relatively higher thinking levels). As a result, on the positive real line of thinking levels, people on the left-hand side become doers and people on the right are thinkers. The equilibrium wage is the outside option value of the indifferent individual.
 
-The exact location of the indifferent individuals (along with the equilibrium wage) is pinned down by the market clearing condition. In the equilibrium, every firm has sufficient employees (equal to the employer's thinking level) to produce. The total measure of execution by all doers should be equal to the total measure of thinking by all thinkers. It also can be proved that there always exists such a cutoff as long as $\mathbb{E}[s] < \infty$. The following figure illustrates the equilibrium.
+The exact location of the indifferent individuals (along with the equilibrium wage) can be pinned down adding the market clearing condition. In the equilibrium, every firm has sufficient employees (equal to the employer's thinking level) to produce. The total measure of execution by all doers should be equal to the total measure of thinking by all thinkers. It also can be proved that there always exists a unique threshold level $s^*$ separating thinkers and doers as long as $\mathbb{E}[s] < \infty$. The following figure illustrates the equilibrium.
 
 <div class="image-single">
     <img src="{{ '/cuties/figs/think_do/fig1.png' | relative_url }}" alt="Equilibrium" />
@@ -47,7 +47,7 @@ The augmentative AI is modelled as uniformly increasing everyone's doing level f
 
 The substitutional AI is modelled as a pool of computations available to firms, which is quantitatively equal to a measure of $\mu < (\int_{0}^{\infty} s f(s) ds)$ execution resources. Firms bid for using the computations, and the unit price of computation will be equal to the labor wage in equilibrium. Because human doers can be replaced by AI, we have fewer doers in the economy. In terms of wage, it turns out that, regardless of the shape of $F$, the equilibrium wage will always decrease because only the first aforementioned effect happens. Those employers with high thinking levels will profit from a lower equilibrium wage.
 
-The following figure illustrates the equilibrium with augmentative and substitutional AI.
+The following figure illustrates the equilibrium with augmentative AI (in the case of $F = 1 - \frac{1}{(1+s)^2}$) and substitutional AI.
 
 <div class="image-row">
     <img src="{{ '/cuties/figs/think_do/fig2.png' | relative_url }}" alt="Augmentative AI" />
