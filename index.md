@@ -9,6 +9,8 @@ cuties_items:
     title: Thinking and Doing
   - file: cuties/yogi_commissar.md
     title: Yogi and Commissar
+  - file: cuties/use_evidence.md
+    title: The Use and Abuse of Evidence
 ---
 # Cuties
 
