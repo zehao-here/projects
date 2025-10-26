@@ -9,7 +9,7 @@ produced_at: 26 Oct 2025
 
 ## Model
 
-The environment parallels the uniform-quartic case in Crawford and Sobel (1982)[^1], but we do not discuss communication here.
+The environment may look similar to the uniform-quartic case in Crawford and Sobel (1982)[^1], but we do not discuss communication here.
 
 **Environment.** A principal $P$ needs to choose an action $a \in \mathbb{R}$ for a single project. Good decision needs to be close to the state of the world $\theta \in \Theta = [0,1]$. One agent $A$ observes the realized state and may present evidence to the principal.
 
