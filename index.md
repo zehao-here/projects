@@ -18,7 +18,7 @@ cuties_items:
 You can find some cute write-ups here.
 ```
 <div class="project-list indented">
-  {% for item in page.cuties_items %}
+  {% for item in page.cuties_items reversed %}
     {% assign page_ref = site.pages | where: "path", item.file | first %}
     {% if page_ref %}
     <a href="{{ page_ref.url | relative_url }}">
