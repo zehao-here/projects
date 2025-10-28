@@ -5,7 +5,9 @@ permalink: /cuties/yogi_commissar/
 produced_at: 16 Oct 2025
 ---
 
-*The idea comes from Prof. [Jin Li](http://www.jin-li.org/). The modification I've made is that the complexity level of a task now serves as a bridge to reflect why Y and C dislike each other.*
+*The story/idea of Yogi and Commissar comes from Prof. [Jin Li](http://www.jin-li.org/). The modification I've made here is the introduction of thecomplexity level of a task along with the associated communication cost, which serves as a bridge explaining why Y and C dislike each other.*
+
+*Update: I am no longer interested in using this to explain why Y and C dislike each other. But it may be still interesting to think of the complexity level as a bridge in some settings.*
 
 ## Story in One Paragraph
 
