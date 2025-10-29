@@ -6,11 +6,13 @@ cuties_items:
   - file: cuties/ai_guijie.md
     title: AI, Headquarters and Guijie
   - file: cuties/think_do.md
-    title: Thinking and Doing
+    title: Thinking and Doing (I)
   - file: cuties/yogi_commissar.md
     title: Yogi and Commissar
   - file: cuties/use_evidence.md
     title: The Use and Abuse of Evidence
+  - file: cuties/think_do_2.md
+    title: Thinking and Doing (II)
 ---
 # Cuties
 
