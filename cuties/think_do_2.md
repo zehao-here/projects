@@ -7,9 +7,9 @@ produced_at: 28 Oct 2025
 
 ## Story in One Paragraph
 
-> The person who combines the two is the one who makes the connection. [...] He understands how the yogis think and work. He knows the sort of ideas you can ask them to have and the sort you cannot. He knows the conditions and circumstances that are conductive to the production of ideas, and the sort that are inhibiting. He knows when they are genuinely stuck and when they are just slacking off.
+> The person who combines the two is the one who makes the connection. $[\dots]$ He understands how the yogis think and work. He knows the sort of ideas you can ask them to have and the sort you cannot. He knows the conditions and circumstances that are conductive to the production of ideas, and the sort that are inhibiting. He knows when they are genuinely stuck and when they are just slacking off.
 >
-> — Anthony Jay, *Management and Machiavelli*, p.126
+><p align="right">— Anthony Jay, <em>Management and Machiavelli</em>, p.126</p>
 
 
 ## The New Role: Managers
