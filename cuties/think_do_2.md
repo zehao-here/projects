@@ -33,7 +33,7 @@ I have not completed formal proofs for the following results, but I hope the int
 The employer (thinker) can always appropriate a positive share from one single final product, so he would still produce $s$ ideas per unit of time and hire enough managers and doers. The number of managers is thus determined by the thinker's thinking level $s$ and their own speed of planning $\frac{s_m}{\lambda}$. Assuming homogenous managers in a firm, with a thinking level $s$ employer, the number of managers $n$ is determined by $\frac{s}{n} / \frac{s_m}{\lambda} =  1$. In words, a manager gets $\frac{s}{n}$ units of ideas per unit of time, and the employer uses up his time letting the manager plan. The number of doers, since we have $e = 1$ for all people, is then $s$. This could naturally generate a hierarchy structure in a firm, where due to the production sequence, the thinker is at the top, the managers are in the middle, and the doers are at the bottom.
 
 <div class="image-single">
-    <img src="{{ '/cuties/figs/think_do_2/share_allocation.jpg' | relative_url }}" alt="Value distribution of a final product" />
+    <img src="{{ '/cuties/figs/think_do_2/firm_structure.jpg' | relative_url }}" alt="Firm structure" />
 </div>
 <p align="center"><em>Figure: Hierarchy Structure in a Firm</em></p>
 
