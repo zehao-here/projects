@@ -9,7 +9,7 @@ produced_at: 28 Oct 2025
 
 > The person who combines the two is the one who makes the connection. $[\dots]$ He understands how the yogis think and work. He knows the sort of ideas you can ask them to have and the sort you cannot. He knows the conditions and circumstances that are conductive to the production of ideas, and the sort that are inhibiting. He knows when they are genuinely stuck and when they are just slacking off.
 >
-><p align="right">— Anthony Jay, <em>Management and Machiavelli</em>, p.126</p>
+<p style="text-align: right;">— Anthony Jay, <em>Management and Machiavelli</em>, p.126</p>
 
 
 ## The New Role: Managers
@@ -35,7 +35,7 @@ The employer (thinker) can always appropriate a positive share from one single f
 <div class="image-single">
     <img src="{{ '/cuties/figs/think_do_2/firm_structure.jpg' | relative_url }}" alt="Firm structure" />
 </div>
-<p align="center"><em>Figure: Hierarchy Structure in a Firm</em></p>
+<p style="text-align: center;"><em>Figure: Hierarchy Structure in a Firm</em></p>
 
 The equilibrium wage and occupational stratification can also be derived similarly. Intuitively, since individuals have homogenous doing, those who have relatively the least of thinking levels in the economy will become doers and receive a uniform wage, which is amount to the outside option value of the doer residing at the cutoff level ($\frac{s_1}{s_1 +\lambda +1}$, where $s_1$ is the cutoff level between doers and managers/thinkers), just like what happens in our previous model.
 
@@ -49,5 +49,5 @@ Finally, it is interesting to investigate how the value of one single final prod
 <div class="image-single">
     <img src="{{ '/cuties/figs/think_do_2/share_allocation.jpg' | relative_url }}" alt="Value distribution of a final product" />
 </div>
-<p align="center"><em>Figure: Value Distribution of a Final Product</em></p>
+<p style="text-align: center;"><em>Figure: Value Distribution of a Final Product</em></p>
 
