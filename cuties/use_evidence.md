@@ -15,7 +15,7 @@ The environment may look similar to the uniform-quartic case in Crawford and Sob
 
 **Preferences.** The principal's payoff is $u_P(a,\theta) = -(a-\theta)^2$. Agent $A$ receives $u_{A}(a) = -a^2$; hence $A$ is biased toward actions closer to 0. For a real world justification, you can think of the scenario where the company would like to make an appropriate amount of investment, while the manager always prefers to invest more.
 
-**Evidence.** Agent $A$ is endowed with a set of hard-evidence technologies. Each hard-evidence technology is represented by a partition $E$ of $\Theta$. For any realization $\theta \in e \in E$, agent $A$ can verifiably disclose the element $e$ to the principal. The set of all partitions $\lbrace E \rbrace$ and the payoff primitives are common knowledge.
+**Evidence.** Agent $A$ is endowed with a set of hard-evidence technologies. Each hard-evidence technology is represented by a partition $E$ of $\Theta$. For any realization $\theta \in e \in E$, agent $A$ can verifiably disclose the element $e$ to the principal. The set of all evidence systems $\lbrace E \rbrace$ and the payoff structures are common knowledge.
 
 
 ## Analysis
