@@ -14,7 +14,7 @@ cuties_items:
   - file: cuties/think_do_2.md
     title: Thinking and Doing (II)
 ---
-# Cuties
+<!-- # Cuties -->
 
 ```
 You can find some cute write-ups here.
