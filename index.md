@@ -13,6 +13,8 @@ cuties_items:
     title: The Use and Abuse of Evidence
   - file: cuties/think_do_2.md
     title: Thinking and Doing (II)
+  - file: cuties/new_contents.md
+    title: Should Platforms Favor New Contents?
 ---
 <!-- # Cuties -->
 
