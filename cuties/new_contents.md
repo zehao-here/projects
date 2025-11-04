@@ -23,16 +23,16 @@ Let's first consider the case where the platform gives no favor to the new conte
 
 In the symmetric equilibrium, the average quality $\bar{q}$ is equal to the optimal quality of the new content $q^*$. Substituting $\bar{q}$ with $q^*$ in the first order condition, we get $q^* = \frac{c^2}{4}$.
 
-Now suppose that $\alpha > 1$. Given the current average quality $\bar{q}$, the new content creator's optimal quality decision (which we denote by $q_{\alpha}^*$) can be calculated again by attacking the first order condition, which gives us the equation $q_{\alpha}^* = \frac{1}{\alpha^2}\left(\alpha c\sqrt{\bar{q}} - \bar{q}\right)$.
+Now suppose that $\alpha > 1$. Given the current average quality $\bar{q}$, the new content creator's optimal quality decision (which we denote by $q_{\alpha}^{\ast}$) can be calculated again by attacking the first order condition, which gives us the equation $q_{\alpha}^{\ast} = \frac{1}{\alpha^2}\left(\alpha c\sqrt{\bar{q}} - \bar{q}\right)$.
 
 Now we compare the optimal choice of the new content and the average quality. It is found that 
 \[
- q_{\alpha}^* - \bar{q} = \frac{1}{\alpha^2}\left(\alpha c\sqrt{\bar{q}} - \bar{q}\right) - \bar{q} = \frac{1}{\alpha^2}\left(\alpha c\sqrt{\bar{q}} - (1+\alpha^2) \bar{q}\right) = \frac{\bar{q}}{\alpha}(c - (\frac{1}{\alpha}+\alpha)\sqrt{\bar{q}})
+ q_{\alpha}^{\ast} - \bar{q} = \frac{1}{\alpha^2}\left(\alpha c\sqrt{\bar{q}} - \bar{q}\right) - \bar{q} = \frac{1}{\alpha^2}\left(\alpha c\sqrt{\bar{q}} - (1+\alpha^2) \bar{q}\right) = \frac{\bar{q}}{\alpha}(c - (\frac{1}{\alpha}+\alpha)\sqrt{\bar{q}})
 \]
 
 Thus, as long as $\bar{q} \geq \frac{c^2}{(\alpha + \frac{1}{\alpha})^2}$, the new content creator will choose a lower quality than the average quality. Under this new-content-favor polity, the quality of the contents will then converge to $\frac{c^2}{(\alpha + \frac{1}{\alpha})^2}$.
 
-Finally, notice that $q_{\alpha}^* = \frac{c^2}{(\alpha + \frac{1}{\alpha})^2} \leq \frac{c^2}{4} = q^*$ and the inequality is strict if $\alpha > 1$. The platform's favoritism will possibly lead to a decrease in the quality of the contents.
+Finally, notice that $q_{\alpha}^{\ast} = \frac{c^2}{(\alpha + \frac{1}{\alpha})^2} \leq \frac{c^2}{4} = q^{\ast}$ and the inequality is strict if $\alpha > 1$. The platform's favoritism will possibly lead to a decrease in the quality of the contents.
 
 
 [^1]: Tullock, Gordon. 1980. “Efficient Rent Seeking.” In *Towards a Theory of the Rent-Seeking Society*, edited by James Buchanan, Roger Tollison, and Gordon Tullock, 97–112. College Station: Texas A&M Univ. Press.
