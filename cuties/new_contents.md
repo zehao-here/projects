@@ -15,7 +15,7 @@ Platforms like TikTok experience cold start problems for new contents. As a resu
 
 The classic Tullock (1980)[^1] model is adapted here to reflect the competition between the new and the existing content creators, which we reduce to a single __average__ content creator. Let $q$ denote the quality of the new content. The average quality of the contents on the platform is denoted by $\bar{q}$.
 
-To favor new contents, the platform gives favor to the new content in the Tullock competition. The probability of winning is given by $\frac{\alpha^2 q}{\alpha^2 q+\bar{q}} = \frac{\alpha^2 q}{\alpha^2 q+1}$, where $\alpha \geq 1$ represents the platform's favoritism. The new content creator receives a payoff of $1$ if he wins the competition, and $0$ otherwise. To produce the new content, the new content creator needs to spend a cost of $\frac{1}{c^2}q$ where $c > 1$.
+To favor new contents, the platform gives favor to the new content in the Tullock competition. The probability of winning is given by $\frac{\alpha^2 q}{\alpha^2 q+\bar{q}}$, where $\alpha \geq 1$ represents the platform's favoritism. The new content creator receives a payoff of $1$ if he wins the competition, and $0$ otherwise. To produce the new content, the new content creator needs to spend a cost of $\frac{1}{c^2}q$ where $c > 1$.
 
 ## Analysis
 
