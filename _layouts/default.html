@@ -29,7 +29,15 @@
     {% endif %}
   </head>
   <body>
+    <img
+      class="page-art"
+      src="{{ '/assets/img/bg_pics/say_sue_me_album.png' | relative_url }}"
+      alt=""
+      loading="lazy"
+      role="presentation"
+    >
       <div id="header">
+        <a class="personal-website-button" href="https://zehao-here.github.io">Personal Website</a>
         <!-- <nav>
           <ul>
             <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
@@ -48,12 +56,12 @@
         <div class="section-header">
           <div id="title">
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
-            <h3>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</h3>
+            <!-- <h3>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</h3> -->
+
             <!-- <hr>
             <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
             <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span> -->
           </div>
-          <a class="personal-website-button" href="https://zehao-here.github.io">Personal Website</a>
         </div>
 
         {{ content }}

@@ -2,7 +2,7 @@
 layout: default
 cuties_items:
   - file: cuties/evaluation.md
-    title: Sine of the Students (Evaluation Design of Two Courses)
+    title: Sine of the Students
   - file: cuties/ai_guijie.md
     title: AI, Headquarters and Guijie
   - file: cuties/think_do.md
@@ -18,9 +18,7 @@ cuties_items:
 ---
 <!-- # Cuties -->
 
-```
-You can find some cute write-ups here.
-```
+
 <div class="project-list indented">
   {% for item in page.cuties_items reversed %}
     {% assign page_ref = site.pages | where: "path", item.file | first %}
