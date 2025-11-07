@@ -9,7 +9,7 @@ produced_at: 28 Oct 2025
 
 > The person who combines the two is the one who makes the connection. $[\dots]$ He understands how the yogis think and work. He knows the sort of ideas you can ask them to have and the sort you cannot. He knows the conditions and circumstances that are conductive to the production of ideas, and the sort that are inhibiting. He knows when they are genuinely stuck and when they are just slacking off.
 >
-<p style="text-align: right;">— Anthony Jay, <em>Management and Machiavelli</em></p>
+<p style="text-align: right;">— Antony Jay, <em>Management and Machiavelli</em></p>
 
 
 ## The New Role: Managers
