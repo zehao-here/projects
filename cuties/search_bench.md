@@ -33,10 +33,10 @@ and
 
 Note that the regular regime is preferred iff $\Pi_F \leq \Pi_R$, which we can simplify as
 \[
-(w - \lambda c) L \leq \lambda \left(\frac{r}{\mu+r}V\right),
+w \leq \lambda \left(\frac{r}{\mu+r}\frac{V}{L} + c\right).
 \]
 or equivalently,
 \[
-w \leq \lambda \left(\frac{r}{\mu+r}\frac{V}{L} + c\right).
+\lambda \geq w \cdot \frac{1}{\frac{r}{\mu+r}\frac{V}{L} + c}
 \]
 
