@@ -15,6 +15,8 @@ cuties_items:
     title: Thinking and Doing (II)
   - file: cuties/new_contents.md
     title: Should Platforms Favor New Contents?
+  - file: cuties/search_bench.md
+    title: Search or Bench
 ---
 <!-- # Cuties -->
 
