@@ -23,20 +23,20 @@ The firm discounts flows at the constant rate $r>0$.
 
 The expected payoff of the firm is the expected present value of exectued ideas minus the cost of search friction or the wage flow, depending on the staffing regime. Let $\Pi_F$ and $\Pi_R$ denote the expected payoff of the flexible and regular regimes, respectively. Then we have
 
-$$
+\[
 \Pi_F = \frac{\lambda}{r}(\frac{\mu}{\mu+r}V - cL),
-$$
+\]
 and
-$$
+\[
 \Pi_R = \frac{\lambda}{r}V - \frac{wL}{r}.
-$$
+\]
 
 Note that the regular regime is preferred iff $\Pi_F \leq \Pi_R$, which we can simplify as
-$$
+\[
 (w - \lambda c) L \leq \lambda \left(\frac{r}{\mu+r}V\right),
-$$
+\]
 or equivalently,
-$$
+\[
 w \leq \lambda \left(\frac{r}{\mu+r}\frac{V}{L} + c\right).
-$$
+\]
 
