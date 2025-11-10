@@ -13,7 +13,7 @@ Ideas occasionally come to the great mind, who needs extra hands to execute them
 ## Model
 Time is continuous, $t\ge 0$. Ideas arrive according to a Poisson process with $\lambda>0$. An idea that is executed delivers a one-off payoff $V>0$ at the (instant of) execution. Execution requires a team of size $L$. The firm can operate under one of two staffing regimes:
 
-- **Flexible (F, search on demand).** For each arrival $\tau_n$, the firm initiates matching. The time until work can start is $T\sim \mathrm{Exp}(\mu)$, independent across idea arrivals, so that $\mathbb{E}[e^{-r T}]=\frac{\mu}{\mu+r}$. Execution is instantaneous once a match is found. The firm pays a one-time matching/search fee $c\ge 0$ per idea (interpreting $c$ as hiring/onboarding and search frictions). No ongoing wage is paid outside matching.
+- **Flexible (F, search on demand).** For each arrival of an idea, the firm initiates matching. The time of searching for eligible workers, until which work can start, is $T\sim \mathrm{Exp}(\mu)$, independent across idea arrivals, so that $\mathbb{E}[e^{-r T}]=\frac{\mu}{\mu+r}$. Execution is instantaneous once a match is found. The firm pays a one-time matching/search fee $c\ge 0$ per idea (interpreting $c$ as hiring/onboarding and search frictions). No ongoing wage is paid outside matching.
 
 - **Regular (R, bench).** The firm maintains $L$ workers on payroll at all times and pays a wage flow $w$ per worker, i.e., a total burn $wL$ per unit of time. With a staffed bench, ideas are executed immediately upon arrival (no delay, no search fee).
 
