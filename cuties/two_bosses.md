@@ -2,7 +2,7 @@
 layout: post-cutie
 title: Please the Difficult Boss First
 permalink: /cuties/new_contents/
-produced_at: 11 Nov 2025
+produced_at: 21 Nov 2025
 ---
 
 ## Story in One Paragraph
