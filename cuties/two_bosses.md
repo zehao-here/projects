@@ -44,8 +44,10 @@ The optimal second-period choices can be found as $y_2^\ast(L) = - 1 + \frac{2c(
 ### Case 2: Asymmetric Costs (Pre-emptive Hedging)
 Now, suppose that "moving Left" (toward Hacker) is harder than "moving Right" (toward Humphrey). We denote the cost of moving left as $c_L$ and the cost of moving right as $c_R$, where $c_L > c_R$.
 
-We define a "rigidity factor" for each direction as $K_i = \frac{1+2c_i}{1+c_i}$. Since $c_L > c_R$, it follows that $K_L > K_R$. Bernard's optimal period 1 choice becomes:
-$$y_1^{\ast} = \frac{(1-\alpha)K_R - \alpha K_L}{(1-\alpha)K_R + \alpha K_L}$$
+We define a "rigidity factor" for each direction as $K_i = \frac{1+2c_i}{1+c_i}$. Since $c_L > c_R$, it follows that $K_L > K_R$. Bernard's optimal period 1 choice becomes
+\[
+y_1^{\ast} = \frac{(1-\alpha)K_R - \alpha K_L}{(1-\alpha)K_R + \alpha K_L}
+\]
 
 This reveals a strategic bias. If we assume Bernard is completely uncertain ($\alpha = 0.5$), the numerator becomes proportional to $K_R - K_L$. Since moving left is harder ($K_L$ is larger), the numerator is negative, implying $y_1^{\ast} < 0$.
 
