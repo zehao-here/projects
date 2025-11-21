@@ -17,12 +17,12 @@ There are two periods in the game. In the first period, the fight between Hacker
 
 Bernard has to choose a project to implement in each period. When he has made a choice $y_1$ in period 1, it incurs a cost for him to deviate to another project $y_2$ in period 2. We model this as $c(y_1, y_2) = c_i (y_2 - y_1)^2$, where $c_i > 0$, $i \in \lbrace L, R \rbrace$ represents the difficulty of moving toward a specific direction. Formally, we have
 
-\[
+$$
 c(y_1, y_2) = \begin{cases}
 c_R(y_2 - y_1)^2 & \text{if } y_2 \geq y_1 \text{ (Moving Right)} \\
 c_L(y_2 - y_1)^2 & \text{if } y_2 < y_1 \text{ (Moving Left)}
 \end{cases}
-\]
+$$
 
 ## Analysis
 
