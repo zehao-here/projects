@@ -17,6 +17,8 @@ cuties_items:
     title: Should Platforms Favor New Contents?
   - file: cuties/search_bench.md
     title: Search or Bench
+  - file: cuties/two_bosses.md
+    title: Please the Difficult Boss First
 ---
 <!-- # Cuties -->
 
