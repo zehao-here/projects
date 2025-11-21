@@ -15,14 +15,7 @@ Our game has an agent, **Bernard**, and two principals, **Hacker ($L$)** and **H
 
 There are two periods in the game. In the first period, the fight between Hacker and Humphrey is so fierce that it is impossible for Bernard to know who will win. However, Bernard holds a prior belief $\alpha \in (0,1)$ that the winner is Hacker. In period $t=2$, the identity of the winner, which is Bernard's true principal, is revealed. In each period, Bernard adopts the utility of the true principal, which takes the quadratic loss form $-(y_t - \theta)^2$. 
 
-Bernard has to choose a project to implement in each period. When he has made a choice $y_1$ in period 1, it incurs a cost for him to deviate to another project $y_2$ in period 2. We model this as $c(y_1, y_2) = c_i (y_2 - y_1)^2$, where $c_i > 0$, $i \in \lbrace L, R \rbrace$ represents the difficulty of moving toward a specific direction. Formally, we have
-
-$$
-c(y_1, y_2) = \begin{cases}
-c_R(y_2 - y_1)^2 & \text{if } y_2 \geq y_1 \text{ (Moving Right)} \\
-c_L(y_2 - y_1)^2 & \text{if } y_2 < y_1 \text{ (Moving Left)}
-\end{cases}
-$$
+Bernard has to choose a project to implement in each period. When he has made a choice $y_1$ in period 1, it incurs a cost for him to deviate to another project $y_2$ in period 2. We model this as $c(y_1, y_2) = c_i (y_2 - y_1)^2$, where $c_i > 0$, $i \in \lbrace L, R \rbrace$ represents the difficulty of moving toward a specific direction. Formally, if $y_2 \geq y_1$, then $c(y_1, y_2) = c_R (y_2 - y_1)^2$; if $y_2 < y_1$, then $c(y_1, y_2) = c_L (y_2 - y_1)^2$.
 
 ## Analysis
 
@@ -40,7 +33,7 @@ Intuitively, since the cost $c$ is symmetric, the "pain" of being wrong about Ha
 The optimal second-period choices can be found as $y_2^\ast(L) = - 1 + \frac{2c(1-\alpha)}{1+c}$ and $y_2^\ast(R) = 1 - \frac{2c\alpha}{1+c}$. When $c \to 0$, $y_2^\ast(L) \to -1$ and $y_2^\ast(R) \to 1$. That is, the second-period choices are always aligned with the preferred actions of the two bosses. When $c \to \infty$, $y_2^\ast(L) \to 1 - 2\alpha$  and $y_2^\ast(R) \to 1 - 2\alpha$. Bernard essentially never revises.
 
 
-### Case 2: Asymmetric Costs (Pre-emptive Hedging)
+### Case 2: Asymmetric Costs (Pre-Emptive Hedging)
 Now, suppose that "moving Left" (toward Hacker) is harder than "moving Right" (toward Humphrey). We denote the cost of moving left as $c_L$ and the cost of moving right as $c_R$, where $c_L > c_R$.
 
 We define a "rigidity factor" for each direction as $K_i = \frac{1+2c_i}{1+c_i}$. Since $c_L > c_R$, it follows that $K_L > K_R$. Bernard's optimal period 1 choice becomes
