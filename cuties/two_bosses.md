@@ -33,7 +33,6 @@ We solve the problem backward. In Period 2, Bernard knows the identity of the bo
 \[
 y_2^{\ast}(\theta_1) = \frac{c y_1 - 1}{1 + c}
 \]
-
 Then we enter to the analysis of period 1. The first period optimization problem can be solved by first spelling out Bernard's value functions in period 2 contingent on state realization, and them plug them back. It can be found that Bernard's optimal choice in period 1 is $y_1^{\ast} = 1 - 2\alpha$, irrelevant of the cost $c$.
 
 Intuitively, since the cost $c$ is symmetric, the "pain" of being wrong about Hacker is mathematically identical to the "pain" of being wrong about Humphrey. Bernard's only optimal strategy is to stay neutral initially, and his position is purely based on his prior belief $\alpha$.
@@ -48,7 +47,6 @@ We define a "rigidity factor" for each direction as $K_i = \frac{1+2c_i}{1+c_i}$
 \[
 y_1^{\ast} = \frac{(1-\alpha)K_R - \alpha K_L}{(1-\alpha)K_R + \alpha K_L}
 \]
-
 This reveals a strategic bias. If we assume Bernard is completely uncertain ($\alpha = 0.5$), the numerator becomes proportional to $K_R - K_L$. Since moving left is harder ($K_L$ is larger), the numerator is negative, implying $y_1^{\ast} < 0$.
 
 Bernard engages in **pre-emptive hedging**. He positions the initial project closer to Minister Hacker ($L$). The intuition is that if Hacker takes power, Bernard is already safely nearby and avoids the expensive $c_L$ adjustment. If Sir Humphrey takes power, Bernard is far away, but the cost to move right ($c_R$) is cheap enough to be manageable. Thus, asymmetric friction leads to biased initial decision-making, even with a neutral agent.
