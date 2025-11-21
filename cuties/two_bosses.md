@@ -17,12 +17,12 @@ There are two periods in the game. In the first period, the fight between Hacker
 
 Bernard has to choose a project to implement in each period. When he has made a choice $y_1$ in period 1, it incurs a cost for him to deviate to another project $y_2$ in period 2. We model this as $c(y_1, y_2) = c_i (y_2 - y_1)^2$, where $c_i > 0$, $i \in \lbrace L, R \rbrace$ represents the difficulty of moving toward a specific direction. Formally, we have
 
-$$
+\[
 c(y_1, y_2) = \begin{cases}
 c_R(y_2 - y_1)^2 & \text{if } y_2 \geq y_1 \text{ (Moving Right)} \\
 c_L(y_2 - y_1)^2 & \text{if } y_2 < y_1 \text{ (Moving Left)}
 \end{cases}
-$$
+\]
 
 ## Analysis
 
@@ -30,7 +30,9 @@ $$
 First, consider the baseline where the difficulty of adjusting the project is identical regardless of direction ($c_L = c_R = c$).
 
 We solve the problem backward. In Period 2, Bernard knows the identity of the boss. He tries to align with the boss's preferred action ($\theta$) but is held back by his previous decision ($y_1$). It turns out that, by attacking the FOC, we have:
-$$y_2^{\ast}(\theta_1) = \frac{c y_1 - 1}{1 + c}$$
+\[
+y_2^{\ast}(\theta_1) = \frac{c y_1 - 1}{1 + c}
+\]
 
 Then we enter to the analysis of period 1. The first period optimization problem can be solved by first spelling out Bernard's value functions in period 2 contingent on state realization, and them plug them back. It can be found that Bernard's optimal choice in period 1 is $y_1^{\ast} = 1 - 2\alpha$, irrelevant of the cost $c$.
 
