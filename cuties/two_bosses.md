@@ -1,7 +1,7 @@
 ---
 layout: post-cutie
 title: Please the Difficult Boss First
-permalink: /cuties/new_contents/
+permalink: /cuties/two_bosses/
 produced_at: 21 Nov 2025
 ---
 
