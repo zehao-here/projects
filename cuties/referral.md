@@ -11,13 +11,13 @@ People would like to recommend their friends instead of who are more capable.
 
 ## Model
 
-We have one principal, two groups (A and B), and two agents (1 and 2) here. The principal must select one of the two agents to conduct a project. Groups A and B can each send a recommendation about which agent the principal should choose.
+We have one principal, two groups (A and B), and two agents (1 and 2) here. The principal must select one of the two agents to conduct a project. Groups A and B can recommend which agent the principal should choose.
 
-Agent 1 has higher ability than agent 2, represented by their types $\theta_1 > \theta_2$ with $\theta_1, \theta_2 \in (0,1)$. The groups observe agents’ abilities perfectly. The principal does not know $\theta_1$ or $\theta_2$ and relies only on the groups’ recommendations.
+Agent 1 has higher ability than agent 2, represented by their types $\theta_1 > \theta_2$ with $\theta_1, \theta_2 \in (0,1)$. The groups observe agents’ abilities perfectly. The principal does not know the agents' types.
 
-The selection rule is influenced by two parameters, $m_1$ and $m_2$, where $m_1, m_2 > 0$ and $m_1 + m_2 = \tfrac{1}{2}$. These can be understood as the endorsement power of the two groups. If both groups recommend agent 1, then agent 1 is chosen with probability $\frac{1}{2} + m_1 + m_2 = 1$, so agent 2 is never selected. If group A recommends agent 1 while group B recommends agent 2, then agent 1 is selected with probability $\tfrac{1}{2} + m_1 - m_2$, and agent 2 is selected with probability $\tfrac{1}{2} - m_1 + m_2$.
+The recommendation is captured by two parameters, $m_1$ and $m_2$, where $m_1, m_2 > 0$ and $m_1 + m_2 = \tfrac{1}{2}$. These can be understood as the endorsement power of the two groups. If both groups recommend agent 1, then agent 1 is chosen with probability $\frac{1}{2} + m_1 + m_2 = 1$, so agent 2 is never selected. If group A recommends agent 1 while group B recommends agent 2, then agent 1 is selected with probability $\tfrac{1}{2} + m_1 - m_2$, and agent 2 is selected with probability $\tfrac{1}{2} - m_1 + m_2$.
 
-Agent 1 is group A's friend, and agent 2 is group B's friend. If the selected agent is a group’s friend, that group enjoys a personal benefit $b > 0$. In addition, both groups care about project success: a successfully conducted project yields payoff $\pi > 0$ to each group. The principal cares only about whether the project succeeds and is otherwise indifferent about which agent or which group benefits personally.
+Agent 1 is group A's friend, and agent 2 is group B's friend. If the selected agent is a group’s friend, that group enjoys a personal benefit $b > 0$. In addition, both groups care about project success: a successfully conducted project yields payoff $\pi > 0$ to each group. The principal cares only about whether the project succeeds.
 
 ## Analysis
 
