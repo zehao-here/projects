@@ -19,6 +19,8 @@ cuties_items:
     title: Search or Bench
   - file: cuties/two_bosses.md
     title: Please the Difficult Boss First
+  - file: cuties/referral.md
+    title: Recommending My Friend
 ---
 <!-- # Cuties -->
 
