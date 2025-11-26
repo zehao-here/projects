@@ -21,9 +21,9 @@ Agent 1 is group A's friend, and agent 2 is group B's friend. If the selected ag
 
 ## Analysis
 
-Goup A, A will unambiguously recommend agent 1, since agent 1 both has higher ability and is group A's friend. Group B has to strategically determine its choice between the two agent. Standing in the shoes of group B, B has the following considerations:
+Group A will unambiguously recommend agent 1, since agent 1 both has higher ability and is A's friend. Group B has to strategically determine its choice between the two agent. Standing in the shoes of group B, B has the following considerations:
 
-Supporting agent 1: agent 1 will be selected for sure. Group B enjoys a better chance of a successful project, but loses its personal benefit.
+Supporting agent 1: agent 1 will be selected for sure. B enjoys a better chance of a successful project, but loses its personal benefit $b$.
 
 Supporting agent 2: with a positive probability, the weaker agent 2 will be selected, and offers group B a personal benefit. However, the probability of a successfully conducted project is decreased.
 
