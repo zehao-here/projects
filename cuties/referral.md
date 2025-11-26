@@ -5,10 +5,6 @@ permalink: /cuties/referral/
 produced_at: 26 Nov 2025
 ---
 
-## Story in One Paragraph
-
-People would like to recommend their friends instead of who are more capable.
-
 ## Model
 
 We have one principal, two groups (A and B), and two agents (1 and 2) here. The principal must select one of the two agents to conduct a project. Groups A and B can recommend which agent the principal should choose.
