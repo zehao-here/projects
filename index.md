@@ -18,7 +18,7 @@ cuties_items:
   - file: cuties/search_bench.md
     title: Search or Bench
   - file: cuties/two_bosses.md
-    title: Please the Difficult Boss First
+    title: Bernard's Decision
   - file: cuties/referral.md
     title: Recommending My Friend
 ---
