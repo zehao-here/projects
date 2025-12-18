@@ -19,7 +19,7 @@ We consider a simple version where all individuals have the same level of doing 
 
 We allow individuals to set up `firms` to work together. Each firm is made up of one `employer` who specializes in thinking and a number of `employees` who specialize in doing. Each individual is free to choose his role in the economy, where he may either be an employer, an employee or a solo worker. However, an employer needs to pay wages to his employees to attract them. Each individual can freely offer any wage to any other individual, who may then choose to accept or reject the offer.
 
-**Payoffs.** The ideas value zero. The value of the final good is normalized to be 1. An employer's payoff is his profits, which is the value of the final goods his firm produces minus the wages he pays to all his employees. An employee's payoff is his wage. A solo worker's payoff is the value of the final goods he produces. Thinking and doing has no costs. There are also no other costs, e.g., setting up a firm, finding employees, etc.
+**Payoffs.** The ideas value zero. The value of the final good is normalized to be 1. An employer's payoff is his profits, which is the value of the final goods his firm produces minus the wages he pays to all his employees. An employee's payoff is his wage. A solo worker's payoff is the value of the final goods he produces. Thinking and doing incur no costs. There are also no other costs, e.g., setting up a firm, finding employees, etc.
 
 ## Equilibrium
 

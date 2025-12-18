@@ -1,6 +1,6 @@
 ---
 layout: post-cutie
-title: Please the Difficult Boss First
+title: Bernard's Decision
 permalink: /cuties/two_bosses/
 produced_at: 21 Nov 2025
 ---

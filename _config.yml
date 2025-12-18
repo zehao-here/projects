@@ -2,11 +2,8 @@ title: Zehao's Toys
 description: You can find some toy models here.
 cuties_description: Some simple and interesting write-ups here!
 
-
 show_downloads: false
 google_analytics:
-theme: jekyll-theme-midnight
-remote_theme: pages-themes/midnight@v0.2.0
 mathjax: true
 markdown: kramdown
 kramdown:
@@ -15,8 +12,9 @@ kramdown:
   math_engine_opts:
     preview: false
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-seo-tag
+sass:
+  sass_dir: _sass
 
 include:
   - cuties 
-  

@@ -29,39 +29,31 @@
     {% endif %}
   </head>
   <body>
-    <img
-      class="page-art"
-      src="{{ '/assets/img/bg_pics/say_sue_me_album.png' | relative_url }}"
-      alt="background picture of Say Sue Me"
-      loading="lazy"
-    >
+    <div class="floating-image" aria-hidden="true">
+      <img
+        class="page-art"
+        src="{{ '/assets/img/bg_pics/say_sue_me_album.png' | relative_url }}"
+        alt="background picture of Say Sue Me"
+        loading="lazy"
+      >
+    </div>
       <div id="header">
+        <div class="header-brand">
+          <span class="brand-title">{{ site.title | default: site.github.repository_name }}</span>
+          <!-- <span class="brand-tagline">{{ site.description | default: site.github.project_tagline }}</span> -->
+        </div>
         <a class="personal-website-button" href="https://zehao-here.github.io">Personal Website</a>
-        <!-- <nav>
-          <ul>
-            <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-            {% if site.show_downloads %}
-              <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-              <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-              <li class="title">DOWNLOADS</li>
-            {% endif %}
-          </ul>
-        </nav> -->
-      </div><!-- end header -->
+      </div>
 
     <div class="wrapper">
 
       <section>
-        <div class="section-header">
+        <!-- <div class="section-header">
           <div id="title">
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
-            <!-- <h3>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</h3> -->
 
-            <!-- <hr>
-            <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-            <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span> -->
           </div>
-        </div>
+        </div> -->
 
         {{ content }}
         
