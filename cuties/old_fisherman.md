@@ -35,7 +35,7 @@ Because $w$ is small, the number sons hired by the old man is determined by the 
 \]
 and
 \[
-\pi_2 = e_H vH - n_2 w = e_H (v_H - \frac{w}{\alpha s_L}).
+\pi_2 = e_H v_H - n_2 w = e_H (v_H - \frac{w}{\alpha s_L}).
 \]
 
 The first scheme is preferred iff $\pi_1 \geq \pi_2$, which we can simplify as
