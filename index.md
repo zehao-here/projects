@@ -21,6 +21,8 @@ cuties_items:
     title: Bernard's Decision
   - file: cuties/referral.md
     title: Recommending My Friend
+  - file: cuties/old_fisherman.md
+    title: The Old Man and the Sea
 ---
 <!-- # Cuties -->
 
