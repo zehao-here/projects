@@ -44,4 +44,4 @@ The first scheme is preferred iff $\pi_1 \geq \pi_2$, which we can simplify as
 \alpha \geq \frac{e_H}{s_H} \frac{v_H - \frac{w}{\alpha s_L}}{v_H - \frac{w}{e_L}} \approx \frac{e_H}{s_H}.
 \]
 
-Suppose that a supper cool fish-salting container is invented by the old man, he may find it profitable to switch to the second scheme.
+Suppose that a super cool fish-salting machine is invented by the old man, he may find it profitable to switch to the second scheme.
