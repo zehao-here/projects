@@ -2,7 +2,7 @@
 layout: post-cutie
 title: The Old Man and the Sea
 permalink: /cuties/old_fisher/
-produced_at: 21 Nov 2025
+produced_at: 19 Dec 2025
 ---
 
 ## Story in One Paragraph
