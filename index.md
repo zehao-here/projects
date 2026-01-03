@@ -23,6 +23,8 @@ cuties_items:
     title: Recommending My Friend
   - file: cuties/old_fisherman.md
     title: The Old Man and the Sea
+  - file: cuties/bumpy_proof.md
+    title: The Bumpy Proof
 ---
 <!-- # Cuties -->
 
