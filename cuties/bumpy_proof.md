@@ -17,7 +17,7 @@ A hard math problem rarely feels uniformly hard in every step. The beginning is 
 
 **Production.** Value comes from solving problems. To what extent a problem is solved is represented by a *completeness index* $x \in [0,1]$, where $x=0$ means a blank page, and $x=1$ means a complete correct solution. 
 
-The difficulty to dealing with the problem varies at different completeness levels, which is captured by *bumpiness* as a function $\phi(x)$. It is assumed that $\phi(x)$ is positive, a.e. continuous, decreasing (earlier steps are bumpier), and concave. Bumpiness affects the *instantaneous time* required to make progress, which is given by $\frac{\phi(x)}{s} + h$, where $h>0$ is constant.
+The difficulty to dealing with the problem varies at different completeness levels, which is captured by *bumpiness* as a function $\phi(x)$. It is assumed that $\phi(x)$ is positive, a.e. continuous, and decreasing (earlier steps are bumpier). Bumpiness affects the *instantaneous time* required to make progress, which is given by $\frac{\phi(x)}{s} + h$, where $h>0$ is constant.
 
 A completed solution is valued by the total bumpiness $\int_0^1 \phi(x) dx \equiv v_\phi$.
 
