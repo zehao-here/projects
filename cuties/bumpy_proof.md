@@ -72,8 +72,6 @@ We wanted to show
 \[
 R^{\text{coop}} \ge R^{\text{sep}}
 \quad\Longleftrightarrow\quad
-\frac{v_\phi}{t^\star}\ge \frac{v_\phi}{T_A}+\frac{v_\phi}{T_B}
-\quad\Longleftrightarrow\quad
 \frac{1}{t^\star}\ge \frac{1}{T_A}+\frac{1}{T_B}.
 \]
 The inequalities above actually hold, while the formal derivations can be a bit messy. Readers are invited to check the details in the appendix.
