@@ -118,7 +118,7 @@ Let
 \]
 Since $\big(\frac1{s_A}+\frac1{s_B}\big)^{-1}=\kappa$, we get
 \[
-\boxed{\ \Phi^\ast=\theta v_\phi+\kappa h(1-2x^\ast).\ }
+\Phi^\ast=\theta v_\phi+\kappa h(1-2x^\ast).
 \tag{B}
 \]
 
@@ -129,9 +129,7 @@ x^\ast v_\phi \le \theta v_\phi+\kappa h(1-2x^\ast).
 \]
 Solve for $x^\ast$:
 \[
-x^\ast(v_\phi+2\kappa h)\le \theta v_\phi+\kappa h
-\quad\Rightarrow\quad
-\boxed{\ x^\ast\le \bar x:=\frac{\theta v_\phi+\kappa h}{v_\phi+2\kappa h}.\ }
+\ x^\ast\le \bar x:=\frac{\theta v_\phi+\kappa h}{v_\phi+2\kappa h}.
 \tag{C}
 \]
 
